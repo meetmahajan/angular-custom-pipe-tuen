@@ -1,0 +1,5 @@
+
+<input id='searchProduct' [(ngModel)]="productInput"/>
+<p *ngFor="let product of products | findProduct : productInput">
+  {{ product}}
+</p>
